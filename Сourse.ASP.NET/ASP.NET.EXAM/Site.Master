@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ASP.Zachet.TEST.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="Styles.css" />
+    <style type="text/css">
+
+        .auto-style1 {
+            width: 904px;
+            height: 200px;
+        }
+        .auto-style2 {
+            height: 199px;
+        }
+        .auto-style3 {
+            width: 200px;
+            height: 199px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <form id="form1" runat="server">
+   <table class="auto-style1"> 
+       <tr> 
+           <td colspan="2" style="height:50px">
+                <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Система учета студентов</h2>
+           </td> 
+       </tr> 
+       <tr> 
+           <td class="auto-style3">
+                <div class="menu">
+                    <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" Orientation="Vertical" ForeColor="Black">
+                        <Items>                            
+                            <asp:MenuItem NavigateUrl="~/Start.aspx" Text="Главная"/>                               
+                            <asp:MenuItem NavigateUrl="~/AddStudents.aspx" Text="Добавить студента"/>
+                            <asp:MenuItem NavigateUrl="~/ShowStudent.aspx" Text="Все студенты"/>
+                             <asp:MenuItem NavigateUrl="~/Edit.aspx" Text="Редактирование"/>
+                            <asp:MenuItem NavigateUrl="~/ShowStudentONE.aspx" Text="Лучшие студенты"/>  
+                            <asp:MenuItem NavigateUrl="~/ShowStudentBAD.aspx" Text="Худшие студенты"/> 
+                            
+                        </Items>
+                    </asp:Menu>
+                </div>
+           </td>
+           <td class="auto-style2">
+               &nbsp;
+               <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+               </asp:ContentPlaceHolder>
+           </td> 
+       </tr> 
+       <tr>         
+            <td colspan="2" class="auto-style4">&nbsp; 
+                <%--Нижний колонтитул--%> 
+                <div id="temo_footer" aria-orientation="vertical"> 
+                      
+                    САЙТ УСПЕВАЕМОСТИ
+                    
+                </div> 
+           </td>         
+       </tr> 
+    </table>
+    </form>
+</body>
+</html>
