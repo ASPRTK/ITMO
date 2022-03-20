@@ -1,0 +1,4 @@
+C:\Users\aleks\Desktop\ITMO.ASP.LAB\ASP.LAB4\obj\Debug\Lab4.csproj.AssemblyReference.cache
+C:\Users\aleks\Desktop\ITMO.ASP.LAB\ASP.LAB4\obj\Debug\Lab4.csproj.CoreCompileInputs.cache
+C:\Users\aleks\Desktop\ITMO.ASP.LAB\ASP.LAB4\obj\Debug\Lab1.EX.1.2.dll
+C:\Users\aleks\Desktop\ITMO.ASP.LAB\ASP.LAB4\obj\Debug\Lab1.EX.1.2.pdb
